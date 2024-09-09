@@ -80,55 +80,27 @@
         <p>&copy; 2024 Skywings. All rights reserved.</p>
     </footer>
 </body>
-<!-- </html>
-chatbot -->
-    /* Chatbot widget */
-.chatbot-widget {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    flex-direction: column;
-    z-index: 1000;
-}
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="chatbot-widget">
+        <div class="chatbot-header">
+            <h4>Skywings Assistant</h4>
+            <button class="close-btn">&times;</button>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages">
+                <div class="message bot">Hello! How can I assist you today?</div>
+                <!-- User and bot messages will appear here -->
+            </div>
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" placeholder="Type your message..." class="chatbot-input">
+            <button class="mic-btn"><i class="fa fa-microphone"></i></button>
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
 
-.chatbot-header {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <button class="chatbot-toggle"><i class="fa fa-comment"></i> Chat</button>
 
-.chatbot-header h4 {
-    margin: 0;
-}
-
-.close-btn {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.chatbot-body {
-    padding: 10px;
-    height: 200px;
-    overflow-y: auto;
-    border-bottom: 1px solid #eee;
-}
-
-.chatbot-messages {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
